@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "R",
+        "icon": "https://img.icons8.com/fluency/48/rstudio.png"
+    }, 
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://img.icons8.com/color/48/tableau-software.png"
+    }, 
+    {
+        "name": "PowerBI",
+        "icon": "https://img.icons8.com/color/48/power-bi.png"
+    }, 
+    {
+        "name": "Modeling",
+        "icon": "https://img.icons8.com/color/48/ms-excel.png"
+    },
+    {
+        "name": "SPSS",
+        "icon": "https://img.icons8.com/fluency/48/bar-chart.png"
+    }, 
+    {
+        "name": "Stata",
+        "icon": "https://img.icons8.com/fluency/48/heat-map.png"
+    },
+    {
+        "name": "Visio",
+        "icon": "https://img.icons8.com/color/48/microsoft-visio.png"
+    },
+    {
+        "name": "VS Code",
+        "icon": " https://img.icons8.com/fluency/48/visual-studio.png"
+    },
+    {
+        "name": "WordPress",
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+    },  
+    {
+        "name": "Salesforce",
+        "icon": "https://img.icons8.com/color/48/salesforce.png"
+    },
+    {
+        "name": "Architecture",
+        "icon": "https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/48/external-structure-science-and-technology-icongeek26-outline-gradient-icongeek26.png"
+    },
+    {
+        "name": "Video Edit",
+        "icon": "https://img.icons8.com/fluency/48/video.png"
+    },
+    {
+        "name": "Solutions",
+        "icon": "https://img.icons8.com/color/48/solve-problem.png"
+    },
+    {
+        "name": "Insights",
+        "icon": "https://img.icons8.com/color/48/light.png"
+    },
+    {
+        "name": "Research",
+        "icon": "https://img.icons8.com/color/48/fine-print.png"
+    },
+    {
+        "name": "Leadership",
+        "icon": "https://img.icons8.com/color/48/meeting-room.png" 
+    }
+]
