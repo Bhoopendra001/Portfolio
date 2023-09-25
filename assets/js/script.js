@@ -48,9 +48,9 @@ $(document).ready(function () {
         var userEmail = this.user_email.value;
         var userMessage = this.message.value;
 
-        emailjs.send('service_r530uag', 'template_vs3ey4u', {
-            user_name: userName,
-            user_email: userEmail,
+        emailjs.send('service_z6ovmnu', 'template_9otfujy', {
+            from_name: userName,
+            email_id: userEmail,
             message: userMessage
         })
             .then(function (response) {
@@ -97,6 +97,12 @@ async function fetchData(type = "skills") {
             {
                 "name": "Python",
                 "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+            },{
+                "name" : "C",
+                "icon" : "https://img.icons8.com/color/48/c-programming.png"
+            },{
+                "name" : "JavaScript",
+                "icon" : "https://img.icons8.com/color/48/javascript--v1.png"
             },
             {
                 "name": "R",
@@ -105,6 +111,75 @@ async function fetchData(type = "skills") {
             {
                 "name": "MySQL",
                 "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+            },{
+                "name" : "Java",
+                "icon" : "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
+            },{
+                "name" : "Spring",
+                "icon" : "https://img.icons8.com/color/48/spring-logo.png"
+            },{
+                "name" : "jQuery",
+                "icon" : "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-filled-tal-revivo.png"
+            },{
+                "name" : "Pandas",
+                "icon" : "https://pandas.pydata.org/static/img/pandas_white.svg"
+            },{
+                "name" : "HTML",
+                "icon" : "https://img.icons8.com/color/48/html-5--v1.png"
+            },{
+                "name" : "CSS",
+                "icon" : "https://img.icons8.com/color/48/css.png"
+            },{
+                "name" : "React",
+                "icon" : "https://img.icons8.com/color/48/react-native.png"
+            },{
+                "name" : "Node",
+                "icon" : "https://img.icons8.com/color/48/nodejs.png"
+            },{
+                "name" : "Flask",
+                "icon" : "https://img.icons8.com/color/48/flask.png"
+            },{
+                "name" : "REST",
+                "icon" : "https://img.icons8.com/color/48/api-settings.png"
+            },{
+                "name" : "AWS",
+                "icon" : "https://img.icons8.com/color/48/amazon-web-services.png"
+            },{
+                "name" : "MongoDB",
+                "icon" : "https://img.icons8.com/color/48/mongodb.png"
+            },{
+                "name" : "Firebase",
+                "icon" : "https://img.icons8.com/color/48/google-firebase-console.png"
+            },{
+                "name" : "Git",
+                "icon" : "https://img.icons8.com/color/48/git.png"
+            },{
+                "name" : "BitBucket",
+                "icon" : "https://img.icons8.com/color/48/bitbucket.png"
+            },{
+                "name" : "Postman",
+                "icon" : "https://img.icons8.com/pulsar-color/48/postman-api.png"
+            },{
+                "name" : "FFMpeg",
+                "icon" : "https://img.icons8.com/color/48/ffmpeg.png"
+            },{
+                "name" : "Docker",
+                "icon" : "https://img.icons8.com/color/48/docker.png"
+            },{
+                "name" : "Terraform",
+                "icon" : "https://img.icons8.com/color/48/terraform.png"
+            },{
+                "name" : "Kubernetes",
+                "icon" : "https://img.icons8.com/color/48/kubernetes.png"
+            },{
+                "name" : "Apache Kafka",
+                "icon" : "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-apache-a-free-and-open-source-cross-platform-web-server-software-logo-color-tal-revivo.png"
+            },{
+                "name" : "NumPy",
+                "icon" : "https://img.icons8.com/color/48/numpy.png"
+            },{
+                "name" : "Confluence",
+                "icon" : "https://img.icons8.com/color/48/confluence--v2.png"
             },
             {
                 "name": "Tableau",
@@ -168,7 +243,62 @@ async function fetchData(type = "skills") {
             }
         ]
         :
-        response = []
+        response =[
+            {
+              "name": "BuddyUp",
+              "desc": "BuddyUp: Connecting People with Shared Interests through Social Events",
+              "image": "buddyUp",
+              "category": "visual",
+              "links": {
+                "view": "https://github.com/Ayush-corp/BuddyUp",
+                "code": "https://github.com/Ayush-corp/BuddyUp"
+              }
+            },{
+                "name": "Stock Data Visualization",
+                "desc": "Extracted and Visualized Tesla and GameStop Stock Data for Informed Decision-Making with Emphasis on Revenue.",
+                "image": "Stock-data-visualization-1",
+                "category": "visual",
+                "links": {
+                  "view": "https://github.com/Ayush-corp/Tesla-and-GameStop-Stock-Analysis",
+                  "code": "https://github.com/Ayush-corp/Tesla-and-GameStop-Stock-Analysis"
+                }
+              },{
+                "name": "Handwritten Digit OCR",
+                "desc": "This project aims to solve handwritten character recognition using convolutional neural networks (CNNs) for accurate classification of handwritten characters.",
+                "image": "ORH-1",
+                "category": "visual",
+                "links": {
+                  "view": "https://github.com/Ayush-corp/Optical-Recognition-of-Handwritten-Digits",
+                  "code": "https://github.com/Ayush-corp/Optical-Recognition-of-Handwritten-Digits"
+                },
+              },{
+                "name": "EMNIST & Binary Alphadigits",
+                "desc": "This project focuses on solving a challenging character recognition problem using deep learning and transfer learning with high-resolution grayscale handwritten letter images.",
+                "image": "emnist",
+                "category": "visual",
+                "links": {
+                  "view": "https://github.com/Ayush-corp/FusedDatasets-EMNIST-Letters-Binary-Alphadigits",
+                  "code": "https://github.com/Ayush-corp/FusedDatasets-EMNIST-Letters-Binary-Alphadigits"
+                },
+              },{
+                "name": "Wordle",
+                "desc": " A word puzzle game where players guess a hidden five-letter word in six attempts, aiming to improve word-guessing skills.",
+                "image": "Wordle",
+                "category": "visual",
+                "links": {
+                  "view": "https://github.com/Ayush-corp/CPSC449_Wordle_Project_4",
+                  "code": "https://github.com/Ayush-corp/CPSC449_Wordle_Project_4"
+                },
+              },{
+                "name": "The Friendly Couch",
+                "desc": "A platform for users to seek support from friends, family, or professionals for emotional and physical challenges, emphasizing the importance of seeking help and creating a safe space.",
+                "image": "friendly-couch",
+                "category": "visual",
+                "links": {
+                  "view": "https://github.com/Ayush-corp/the_friendly_couch",
+                  "code": "https://github.com/Ayush-corp/the_friendly_couch"
+                },
+              }]
     const data = await response;
     return data;
 }
@@ -294,6 +424,7 @@ srtop.reveal('.home .content .btn', { delay: 200 });
 
 srtop.reveal('.home .image', { delay: 400 });
 srtop.reveal('.home .linkedin', { interval: 600 });
+srtop.reveal('.home .github', { interval: 700 });
 srtop.reveal('.home .envelope', { interval: 800 });
 srtop.reveal('.home .twitter', { interval: 1000 });
 srtop.reveal('.home .telegram', { interval: 600 });

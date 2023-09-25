@@ -40,6 +40,7 @@ html::-webkit-scrollbar-thumb {
   background: #420177;
 }
 
+
 /* pre loader start */
 .loader-container {
   position: fixed;
@@ -307,7 +308,7 @@ header .navbar ul li a:hover {
   background-color: #0685da;
 }
 .social-icons a.github:hover {
-  background-color: #0e0e0e;
+  background-color: #00aced;
 }
 .social-icons a.envelope:hover {
   background-color: #00aced;
@@ -477,10 +478,34 @@ header .navbar ul li a:hover {
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  overflow-x: scroll;
 }
+
+/* width */
+.skills .container::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+.skills .container::-webkit-scrollbar-track {
+  background: #6d27aa;
+}
+
+/* Handle */
+.skills .container::-webkit-scrollbar-thumb {
+  background: #0b0419;
+  width: 10px;
+}
+
+/* Handle on hover */
+.skills .container::-webkit-scrollbar-thumb:hover {
+  background: #57059e;
+}
+
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -506,8 +531,9 @@ header .navbar ul li a:hover {
 .skills .container .bar .info i {
   font-size: 4rem;
 }
+
 .skills .container .bar .info span {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
@@ -845,6 +871,13 @@ header .navbar ul li a:hover {
   font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+}
+.experience .content .tag a{
+  text-decoration: underline;
+  color: #000;
+}
+.experience .content .tag a:hover{
+  color: #2506ad;
 }
 .experience .content .desc {
   margin-left: 1.5rem;
