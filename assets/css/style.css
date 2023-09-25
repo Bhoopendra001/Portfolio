@@ -1000,6 +1000,7 @@ form .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
 }
 .form-group .field {
   height: 50px;

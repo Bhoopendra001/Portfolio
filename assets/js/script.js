@@ -46,11 +46,13 @@ $(document).ready(function () {
         // Capture form data before sending the form
         var userName = this.user_name.value;
         var userEmail = this.user_email.value;
+        var userContact = this.contact_number.value;
         var userMessage = this.message.value;
 
         emailjs.send('service_z6ovmnu', 'template_9otfujy', {
             from_name: userName,
             email_id: userEmail,
+            contact : userContact,
             message: userMessage
         })
             .then(function (response) {
@@ -291,7 +293,7 @@ async function fetchData(type = "skills") {
                 },
               },{
                 "name": "The Friendly Couch",
-                "desc": "A platform for users to seek support from friends, family, or professionals for emotional and physical challenges, emphasizing the importance of seeking help and creating a safe space.",
+                "desc": "A support App for users to seek assistance from their network or professionals, promoting help-seeking and a safe environment.",
                 "image": "friendly-couch",
                 "category": "visual",
                 "links": {
