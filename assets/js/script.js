@@ -458,3 +458,22 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+const mediaQuery = window.matchMedia('(min-width: 300px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  // Then trigger an alert
+  
+    srtop.reveal('.education .box', { interval: 100 });
+
+    /* SCROLL PROJECTS */
+    srtop.reveal('.work .box', { interval: 100 });
+
+    /* SCROLL EXPERIENCE */
+    srtop.reveal('.experience .timeline', { delay: 200 });
+    srtop.reveal('.experience .timeline .container', { interval: 200 });
+
+    /* SCROLL CONTACT */
+    srtop.reveal('.contact .container', { delay: 200 });
+    srtop.reveal('.contact .container .form-group', { delay: 200 });
+}
