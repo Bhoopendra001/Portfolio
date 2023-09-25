@@ -124,7 +124,7 @@ async function fetchData(type = "skills") {
                 "icon" : "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-filled-tal-revivo.png"
             },{
                 "name" : "Pandas",
-                "icon" : "https://pandas.pydata.org/static/img/pandas_white.svg"
+                "icon" : "https://img.icons8.com/color/48/pandas.png"
             },{
                 "name" : "HTML",
                 "icon" : "https://img.icons8.com/color/48/html-5--v1.png"
