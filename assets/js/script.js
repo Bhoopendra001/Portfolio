@@ -73,7 +73,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Ayush Bhardwaj";
+            document.title = "Portfolio | Bhoopendra Singh";
             $("#favicon").attr("href", "assets/images/favicon2.png");
         }
         else {
