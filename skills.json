@@ -1,133 +1,39 @@
 [
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },{
         "name" : "C",
-        "icon" : "https://icons8.com/icon/40670/c-programming"
+        "icon" : "https://img.icons8.com/color/48/c-programming.png"
     },{
         "name" : "JavaScript",
-        "icon" : "https://icons8.com/icon/108784/javascript"
-    },
-    {
-        "name": "R",
-        "icon": "https://img.icons8.com/fluency/48/rstudio.png"
-    }, 
-    {
+        "icon" : "https://img.icons8.com/color/48/javascript--v1.png"
+    },{
         "name": "MySQL",
         "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
     },{
-        "name" : "Java",
-        "icon" : "https://icons8.com/icon/90519/spring-boot"
-    },{
-        "name" : "Spring Boot",
-        "icon" : "https://icons8.com/icon/90519/spring-boot"
-    },{
-        "name" : "jQuery",
-        "icon" : "https://icons8.com/icon/UosOoyB3CzTS/jquery-is-a-javascript-library-designed-to-simplify-html"
-    },{
-        "name" : "Pandas",
-        "icon" : "https://pandas.pydata.org/static/img/pandas_white.svg"
-    },{
         "name" : "HTML",
-        "icon" : "https://icons8.com/icon/20909/html-5"
+        "icon" : "https://img.icons8.com/color/48/html-5--v1.png"
     },{
         "name" : "CSS",
-        "icon" : "https://icons8.com/icon/11935/css"
+        "icon" : "https://img.icons8.com/color/48/css.png"
     },{
         "name" : "Reactjs",
-        "icon" : "https://icons8.com/icon/123603/react-native"
+        "icon" : "https://img.icons8.com/color/48/react-native.png"
     },{
         "name" : "Nodejs",
-        "icon" : "https://icons8.com/icon/54087/nodejs"
-    },{
-        "name" : "Flask",
-        "icon" : "https://icons8.com/icon/TtXEs5SeYLG8/flask"
-    },{
-        "name" : "REST",
-        "icon" : "https://icons8.com/icon/21895/rest-api"
-    },{
-        "name" : "SOAP",
-        "icon" : "https://icons8.com/icon/21895/rest-api"
-    },{
-        "name" : "AWS",
-        "icon" : "https://icons8.com/icon/33039/amazon-web-services"
-    },{
-        "name" : "MongoDB",
-        "icon" : "https://icons8.com/icon/74402/mongodb"
-    },{
-        "name" : "Firebase",
-        "icon" : "https://icons8.com/icon/87330/google-firebase-console"
+        "icon" : "https://img.icons8.com/color/48/nodejs.png"
     },{
         "name" : "Git",
-        "icon" : "https://icons8.com/icon/20906/git"
-    },{
-        "name" : "BitBucket",
-        "icon" : "https://icons8.com/icon/20907/bitbucket"
+        "icon" : "https://img.icons8.com/color/48/git.png"
     },{
         "name" : "Postman",
-        "icon" : "https://icons8.com/icon/32VTxWwd6gOB/postman-api"
-    },{
-        "name" : "FFMpeg",
-        "icon" : "https://icons8.com/icon/32418/ffmpeg"
-    },{
-        "name" : "Docker",
-        "icon" : "https://icons8.com/icon/22813/docker"
-    },{
-        "name" : "Terraform",
-        "icon" : "https://icons8.com/icon/kEkT1u7zTDk5/terraform"
-    },{
-        "name" : "Kubernetes",
-        "icon" : "https://icons8.com/icon/cvzmaEA4kC0o/kubernetes"
-    },{
-        "name" : "Apache Kafka",
-        "icon" : "https://icons8.com/icon/xgChbMh3wYDY/apache-a-free-and-open-source-cross-platform-web-server-software"
-    },{
-        "name" : "NumPy",
-        "icon" : "https://icons8.com/icon/aR9CXyMagKIS/numpy"
-    },{
-        "name" : "Confluence",
-        "icon" : "https://icons8.com/icon/h8EoAfgRDYLo/confluence"
-    },
-    {
-        "name": "Tableau",
-        "icon": "https://img.icons8.com/color/48/tableau-software.png"
+        "icon" : "https://img.icons8.com/pulsar-color/48/postman-api.png"
     }, 
     {
         "name": "PowerBI",
         "icon": "https://img.icons8.com/color/48/power-bi.png"
-    }, 
-    {
-        "name": "Modeling",
-        "icon": "https://img.icons8.com/color/48/ms-excel.png"
-    },
-    {
-        "name": "SPSS",
-        "icon": "https://img.icons8.com/fluency/48/bar-chart.png"
-    }, 
-    {
-        "name": "Stata",
-        "icon": "https://img.icons8.com/fluency/48/heat-map.png"
-    },
-    {
-        "name": "Visio",
-        "icon": "https://img.icons8.com/color/48/microsoft-visio.png"
     },
     {
         "name": "VS Code",
         "icon": " https://img.icons8.com/fluency/48/visual-studio.png"
-    },
-    {
-        "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    },  
-    {
-        "name": "Salesforce",
-        "icon": "https://img.icons8.com/color/48/salesforce.png"
-    },
-    {
-        "name": "Architecture",
-        "icon": "https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/48/external-structure-science-and-technology-icongeek26-outline-gradient-icongeek26.png"
     },
     {
         "name": "Video Edit",
@@ -136,14 +42,6 @@
     {
         "name": "Solutions",
         "icon": "https://img.icons8.com/color/48/solve-problem.png"
-    },
-    {
-        "name": "Insights",
-        "icon": "https://img.icons8.com/color/48/light.png"
-    },
-    {
-        "name": "Research",
-        "icon": "https://img.icons8.com/color/48/fine-print.png"
     },
     {
         "name": "Leadership",

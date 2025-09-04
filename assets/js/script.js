@@ -40,31 +40,32 @@ $(document).ready(function () {
 
     
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("y3uVObpo0LxLWpA2u");
+    document.getElementById("contact-form").addEventListener("submit", async function(e) {
+          e.preventDefault();
 
-        // Capture form data before sending the form
-        var userName = this.user_name.value;
-        var userEmail = this.user_email.value;
-        var userContact = this.contact_number.value;
-        var userMessage = this.message.value;
+  const name = document.querySelector("input[name='user_name']").value;
+  const email = document.querySelector("input[name='user_email']").value;
+  const phone = document.querySelector("input[name='contact_number']").value;
+  const message = document.querySelector("textarea[name='message']").value;
 
-        emailjs.send('service_z6ovmnu', 'template_9otfujy', {
-            from_name: userName,
-            email_id: userEmail,
-            contact : userContact,
-            message: userMessage
-        })
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+  try {
+    const response = await fetch("/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, phone, message })
     });
+
+    const data = await response.json();
+    if (response.ok && data.success) {
+      alert("Form submitted successfully!");
+      document.getElementById("contact-form").reset();
+    } else {
+      alert("Form Submission Failed: " + (data.error || "Try Again"));
+    }
+  } catch (err) {
+    alert("Form Submission Failed! Try Again");
+  }
+});
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -97,163 +98,64 @@ async function fetchData(type = "skills") {
     type === "skills" ?
         response = [
             {
-                "name": "Python",
-                "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-            },{
-                "name" : "C",
-                "icon" : "https://img.icons8.com/color/48/c-programming.png"
-            },{
-                "name" : "JavaScript",
-                "icon" : "https://img.icons8.com/color/48/javascript--v1.png"
-            },
-            {
-                "name": "R",
-                "icon": "https://img.icons8.com/fluency/48/rstudio.png"
-            }, 
-            {
-                "name": "MySQL",
-                "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
-            },{
-                "name" : "Java",
-                "icon" : "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
-            },{
-                "name" : "Spring",
-                "icon" : "https://img.icons8.com/color/48/spring-logo.png"
-            },{
-                "name" : "jQuery",
-                "icon" : "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-filled-tal-revivo.png"
-            },{
-                "name" : "Pandas",
-                "icon" : "https://img.icons8.com/color/48/pandas.png"
-            },{
-                "name" : "HTML",
-                "icon" : "https://img.icons8.com/color/48/html-5--v1.png"
-            },{
-                "name" : "CSS",
-                "icon" : "https://img.icons8.com/color/48/css.png"
-            },{
-                "name" : "React",
-                "icon" : "https://img.icons8.com/color/48/react-native.png"
-            },{
-                "name" : "Node",
-                "icon" : "https://img.icons8.com/color/48/nodejs.png"
-            },{
-                "name" : "Flask",
-                "icon" : "https://img.icons8.com/color/48/flask.png"
-            },{
-                "name" : "REST",
-                "icon" : "https://img.icons8.com/color/48/api-settings.png"
-            },{
-                "name" : "AWS",
-                "icon" : "https://img.icons8.com/color/48/amazon-web-services.png"
-            },{
-                "name" : "MongoDB",
-                "icon" : "https://img.icons8.com/color/48/mongodb.png"
-            },{
-                "name" : "Firebase",
-                "icon" : "https://img.icons8.com/color/48/google-firebase-console.png"
-            },{
-                "name" : "Git",
-                "icon" : "https://img.icons8.com/color/48/git.png"
-            },{
-                "name" : "BitBucket",
-                "icon" : "https://img.icons8.com/color/48/bitbucket.png"
-            },{
-                "name" : "Postman",
-                "icon" : "https://img.icons8.com/pulsar-color/48/postman-api.png"
-            },{
-                "name" : "FFMpeg",
-                "icon" : "https://img.icons8.com/color/48/ffmpeg.png"
-            },{
-                "name" : "Docker",
-                "icon" : "https://img.icons8.com/color/48/docker.png"
-            },{
-                "name" : "Terraform",
-                "icon" : "https://img.icons8.com/color/48/terraform.png"
-            },{
-                "name" : "Kubernetes",
-                "icon" : "https://img.icons8.com/color/48/kubernetes.png"
-            },{
-                "name" : "Apache Kafka",
-                "icon" : "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-apache-a-free-and-open-source-cross-platform-web-server-software-logo-color-tal-revivo.png"
-            },{
-                "name" : "NumPy",
-                "icon" : "https://img.icons8.com/color/48/numpy.png"
-            },{
-                "name" : "Confluence",
-                "icon" : "https://img.icons8.com/color/48/confluence--v2.png"
-            },
-            {
-                "name": "Tableau",
-                "icon": "https://img.icons8.com/color/48/tableau-software.png"
-            }, 
-            {
-                "name": "PowerBI",
-                "icon": "https://img.icons8.com/color/48/power-bi.png"
-            }, 
-            {
-                "name": "Modeling",
-                "icon": "https://img.icons8.com/color/48/ms-excel.png"
-            },
-            {
-                "name": "SPSS",
-                "icon": "https://img.icons8.com/fluency/48/bar-chart.png"
-            }, 
-            {
-                "name": "Stata",
-                "icon": "https://img.icons8.com/fluency/48/heat-map.png"
-            },
-            {
-                "name": "Visio",
-                "icon": "https://img.icons8.com/color/48/microsoft-visio.png"
-            },
-            {
-                "name": "VS Code",
-                "icon": " https://img.icons8.com/fluency/48/visual-studio.png"
-            },
-            {
-                "name": "WordPress",
-                "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-            },  
-            {
-                "name": "Salesforce",
-                "icon": "https://img.icons8.com/color/48/salesforce.png"
-            },
-            {
-                "name": "Architecture",
-                "icon": "https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/48/external-structure-science-and-technology-icongeek26-outline-gradient-icongeek26.png"
-            },
-            {
-                "name": "Video Edit",
-                "icon": "https://img.icons8.com/fluency/48/video.png"
-            },
-            {
-                "name": "Solutions",
-                "icon": "https://img.icons8.com/color/48/solve-problem.png"
-            },
-            {
-                "name": "Insights",
-                "icon": "https://img.icons8.com/color/48/light.png"
-            },
-            {
-                "name": "Research",
-                "icon": "https://img.icons8.com/color/48/fine-print.png"
-            },
-            {
-                "name": "Leadership",
-                "icon": "https://img.icons8.com/color/48/meeting-room.png" 
-            }
+        "name" : "C",
+        "icon" : "https://img.icons8.com/color/48/c-programming.png"
+    },{
+        "name" : "JavaScript",
+        "icon" : "https://img.icons8.com/color/48/javascript--v1.png"
+    },{
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },{
+        "name" : "HTML",
+        "icon" : "https://img.icons8.com/color/48/html-5--v1.png"
+    },{
+        "name" : "CSS",
+        "icon" : "https://img.icons8.com/color/48/css.png"
+    },{
+        "name" : "Reactjs",
+        "icon" : "https://img.icons8.com/color/48/react-native.png"
+    },{
+        "name" : "Nodejs",
+        "icon" : "https://img.icons8.com/color/48/nodejs.png"
+    },{
+        "name" : "Git",
+        "icon" : "https://img.icons8.com/color/48/git.png"
+    },{
+        "name" : "Postman",
+        "icon" : "https://img.icons8.com/pulsar-color/48/postman-api.png"
+    }, 
+    {
+        "name": "PowerBI",
+        "icon": "https://img.icons8.com/color/48/power-bi.png"
+    },
+    {
+        "name": "VS Code",
+        "icon": " https://img.icons8.com/fluency/48/visual-studio.png"
+    },
+    {
+        "name": "Video Edit",
+        "icon": "https://img.icons8.com/fluency/48/video.png"
+    },
+    {
+        "name": "Solutions",
+        "icon": "https://img.icons8.com/color/48/solve-problem.png"
+    },
+    {
+        "name": "Leadership",
+        "icon": "https://img.icons8.com/color/48/meeting-room.png" 
+    }
         ]
         :
         response =[
             {
-              "name": "BuddyUp",
-              "desc": "BuddyUp: Connecting People with Shared Interests through Social Events",
-              "image": "buddyUp",
+              "name": "Task Management App",
+              "desc": "A task management app that allows users to create, update, and delete tasks, with a focus on user-friendly design and functionality.",
+              "image": "task-management-app",
               "category": "visual",
               "links": {
-                "view": "https://github.com/Ayush-corp/BuddyUp",
-                "code": "https://github.com/Ayush-corp/BuddyUp"
+                "view": "https://github.com/Bhoopendra001/TaskManagementApp",
+                "code": "https://github.com/Bhoopendra001/TaskManagementApp.git"
               }
             },{
                 "name": "Stock Data Visualization",
