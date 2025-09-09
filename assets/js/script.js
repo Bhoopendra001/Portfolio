@@ -98,7 +98,10 @@ async function fetchData(type = "skills") {
     type === "skills" ?
         response = [
             {
-        "name" : "C",
+        "name" : "AWS",
+        "icon" : "https://img.icons8.com/color/48/amazon-web-services.png"
+    }, {
+        "name" : "C++",
         "icon" : "https://img.icons8.com/color/48/c-programming.png"
     },{
         "name" : "JavaScript",
